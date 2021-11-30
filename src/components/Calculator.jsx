@@ -10,7 +10,7 @@ const Calculator = (props) => {
     const calculate = () => {
         try {
             let result = evaluate(display)
-            setDisplay(result)
+            setDisplay(String(result))
         }
         catch (e) {
             setDisplay(e.message)
